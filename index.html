@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi'sポートフォリオ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f8ff;
+            color: #443a40;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #def7fd 0%, #bff2ff 100%);
+            color: #443a40;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 2.5em;
+        }
+        section {
+            background: #ffffff;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #443a40;
+            border-bottom: 2px solid #443a40;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: #f9f4f0;
+            padding: 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid #e3d0c3;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .project-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #876753;
+            margin-top: 0;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .tech-item {
+            background: #e3d0c3;
+            color: #4a4a4a;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        .tech-item:hover {
+            background: #d1b7a4;
+        }
+        a {
+            color: #876753;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #d1b7a4;
+        }
+        .contact-info {
+            background: #f9f4f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile-image.jpg" alt="プロフィール写真" class="profile-image">
+            <h1>Bambi</h1>
+            <p>データサイエンティスト</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="overview">
+            <h2>自己紹介</h2>
+            <p>初めまして、Bambi(ばんび)と申します。<br>
+                本業では2年間データサイエンティストとして従事しており、現在はプロジェクトマネージャー(PM)職メインでLLMや予測モデル開発等の複数の案件に携わっています。<br>
+                また副業ではDXコンサルからアプリの開発までを行っております。
+        </section>
+
+        <section id="projects">
+            <h2>プロジェクト一覧</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3><a href="project1.html">Coming Soon</a></h3>
+                    <p><strong>説明:</strong>-</p>
+                    <p><strong>使用技術:</strong>-</p>
+                    <p><strong>成果:</strong>-</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="#project2">Coming Soon</a></h3>
+                    <p><strong>説明:</strong>-</p>
+                    <p><strong>使用技術:</strong>-</p>
+                    <p><strong>成果:</strong>-</p>
+                </div>
+                <!-- 他のプロジェクトカードも同様に追加 -->
+            </div>
+        </section>
+
+        <section id="tech-stack">
+            <h2>技術スタック</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Python</span>
+                <span class="tech-item">SQL</span>
+                <span class="tech-item">HTML&CSS</span>
+                <span class="tech-item">JavaScript</span>
+                <span class="tech-item">GAS</span>
+                <span class="tech-item">機械学習</span>
+                <span class="tech-item">LLM&RAG&エージェント</span>
+                <span class="tech-item">Qlik Sense</span>
+                <span class="tech-item">PowerBI</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>コンタクト</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:bambi.hp.contact@gmail.com">bambi.hp.contact@gmail.com</a></p>
+                <p>GitHub: <a href="" target="_blank">Coming Soon</a></p>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
